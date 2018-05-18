@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^(.+[^/])/$ http://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^/$ /index.php
+RewriteRule ^partenaires$ pages/partenaires.php
+RewriteRule ^offres$ pages/offres.php
+RewriteRule ^actualite$ pages/actualite.php
+RewriteRule ^contact$ pages/contact.php
